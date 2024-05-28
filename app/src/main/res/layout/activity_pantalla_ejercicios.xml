@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edmt.dev.androidgridlayout.PantallaEjercicios">
+
+    <!-- EJERCICIO ACTUAL -->
+    <TextView
+        android:id="@+id/ejercicioActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/segundero"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:textAlignment="center"
+        android:text="EJERCICIO"
+        android:textSize="42sp"
+        android:fontFamily="@font/opensans_extrabold"
+        android:textColor="@android:color/black"
+        android:textAllCaps="true"
+        />
+
+    <!-- TIEMPO -->
+    <TextView
+        android:id="@+id/segundero"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIEMPO"
+        android:textSize="72sp"
+        android:fontFamily="@font/opensans_regular"/>
+
+    <!-- EJERCICIO SIGUIENTE -->
+
+    <TextView
+        android:id="@+id/ejercicioSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/segundero"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="175dp"
+        android:fontFamily="@font/opensans_bold"
+        android:text="EJERCICIO SIGUIENTE"
+        android:textSize="24sp"
+        tools:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/reanudarButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ejercicioSiguiente"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="-150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="100dp"
+        android:text="REANUDAR"
+        android:visibility="invisible" />
+
+</RelativeLayout>
